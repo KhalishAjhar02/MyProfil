@@ -1,4 +1,4 @@
-body {
+    body {
       font-family: Arial, sans-serif;
       text-align: center;
       margin-top: 40px;
@@ -11,9 +11,10 @@ body {
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
-
+    
     .link-box {
       width: 250px;
+      max-width: 90%;
       margin: 10px auto;
       padding: 15px;
       border: 3px solid rgb(164, 2, 2);
@@ -46,4 +47,26 @@ body {
     h1 {
       font-family: 'Courier New', Courier, monospace;
       color: aliceblue;
+    }
+
+    @media screen and (max-width: 600px) {
+      .link-box {
+        width: 90%;
+        font-size: 14px;
+        padding: 12px;
+      }
+    
+      img {
+        width: 100px;
+      }
+    
+      .icon {
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+      }
+    
+      h1 {
+        font-size: 20px;
+      }
     }
