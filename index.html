@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1,0">
+  <title>My Profil</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/Icon.png" type="imge/x-iron">
+</head>
+<body>
+   <img src="imge/KHOJAR.png">
+   <h1>KHOJAR</h1>
+  <a class="link-box" href="https://www.tiktok.com/@khojar02?is_from_webapp=1&sender_device=pc">
+  <img src="imge/Tiktok.png" alt="Tiktok" class="icon">Tiktok
+  </a>
+  <a class="link-box" href="https://discord.com/channels/1302508455772291093/1307913132001460304/1307913206261485662">
+    <img src="imge/Instagram.webp" alt="Instagram" class="icon">Instagram
+  </a>
+  <a class="link-box" href="https://discord.gg/z2b38PrV">
+    <img src="imge/Discord.png" alt="Discord" class="icon">Discord
+  </a>
+  <a class="link-box" href="https://www.youtube.com/@khojar02">
+    <img src="imge/Youtube.webp" alt="Youtube" class="icon">Youtube
+  </a>
+  <a class="link-box" href="https://saweria.co/Khojar">
+    <img src="imge/Saweria.png" alt="Saweria" class="icon">Saweria
+  </a>
+  <a class="link-box" href="https://sociabuzz.com/khojar/tribe">
+    <img src="imge/Sociabuzz.png" alt="Sociabuzz" class="icon">Sociabuzz
+  </a>
+  <a class="link-box" href="https://www.threads.com/@khojar02">
+    <img src="imge/Threads.png" alt="Threads" class="icon">Threads
+  </a>
+  <div class="music-player" id="player" role="region" aria-label="Pemutar musik">
+    <div class="music-head">
+      <span class="music-title" id="musicTitle">Memuat lagu...</span>
+      <span class="music-time"><span id="timeNow">0:00</span> / <span id="timeTotal">0:00</span></span>
+    </div>
+
+    <input type="range" id="seekBar" min="0" max="100" value="0" step="0.1" aria-label="Posisi lagu">
+
+    <div class="music-controls">
+      <button id="btnMenu" type="button" aria-label="Daftar lagu" aria-expanded="false">
+        <svg viewBox="0 0 24 24"><path d="M3 6h18v2.5H3zM3 10.75h18v2.5H3zM3 15.5h18V18H3z"/></svg>
+      </button>
+      <button id="btnPrev" type="button" aria-label="Lagu sebelumnya">
+        <svg viewBox="0 0 24 24"><path d="M6 5h2.5v14H6zM20 5v14L9.5 12z"/></svg>
+      </button>
+      <button id="btnPlay" type="button" aria-label="Putar">
+        <svg viewBox="0 0 24 24"><path d="M7 4.5v15L20 12z"/></svg>
+      </button>
+      <button id="btnNext" type="button" aria-label="Lagu berikutnya">
+        <svg viewBox="0 0 24 24"><path d="M15.5 5H18v14h-2.5zM4 5v14l10.5-7z"/></svg>
+      </button>
+      <button id="btnLike" type="button" aria-label="Sukai lagu" aria-pressed="false">
+        <svg viewBox="0 0 24 24"><path d="M12 21s-8.5-5.4-8.5-11.2C3.5 6.7 5.8 4.5 8.5 4.5c1.5 0 2.8.7 3.5 1.9.7-1.2 2-1.9 3.5-1.9 2.7 0 5 2.2 5 5.3C20.5 15.6 12 21 12 21z"/></svg>
+      </button>
+    </div>
+
+    <!-- ===== MUSIC PLAYER ===== -->
+    <div class="music-panel">
+      <ul class="music-list" id="musicList"></ul>
+      <div class="music-extra">
+        <button id="btnShuffle" type="button" aria-label="Acak" aria-pressed="false">
+          <svg viewBox="0 0 24 24"><path d="M17 3l4 4-4 4V8h-2.6l-3 4 3 4H17v-3l4 4-4 4v-3h-3.6L9 12.6 6.6 16H3v-2h2.6l2.9-4-2.9-4H3V4h3.6L9 7.4 12.4 4H17z"/></svg>
+        </button>
+        <button id="btnLoop" type="button" aria-label="Ulangi satu lagu" aria-pressed="false">
+          <svg viewBox="0 0 24 24"><path d="M7 7h10v3l4-4-4-4v3H5v6h2zM17 17H7v-3l-4 4 4 4v-3h12v-6h-2z"/></svg>
+        </button>
+        <input type="range" id="volumeBar" min="0" max="1" value="0.5" step="0.01" aria-label="Volume">
+      </div>
+    </div>
+  </div>
+
+  <audio id="audio" preload="metadata"></audio>
+  <script src="javascript.js"></script>
+</body>
+</html>
