@@ -256,4 +256,15 @@ body {
       h1 {
         font-size: 20px;
       }
+
+      /* Player di tengah atas, dan konten turun supaya tidak tertutup */
+      body {
+        margin-top: 115px;
+      }
+
+      .music-player {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 230px;
+      }
     }
