@@ -9,7 +9,8 @@
       { title: "6. Toxik × Exusiai·Midnight Delivery Theme Song - POSTER GIRL (Delta Force × Arknights)", src: "Music/6. Toxik × Exusiai·Midnight Delivery Theme Song - POSTER GIRL (Delta Force × Arknights).mp3" },
       { title: "7. Beyond the Stars - Delta Force", src: "Music/7. Beyond the Stars - Delta Force.mp3" },
       { title: "8. Fury Theme Song - Delta Force", src: "Music/8. Fury Theme Song - Delta Force.mp3" },
-      { title: "9. LAMENT Theme Song - Delta Force", src: "Music/9. LAMENT Theme Song - Delta Force.mp3" }
+      { title: "9. LAMENT Theme Song - Delta Force", src: "Music/9. LAMENT Theme Song - Delta Force.mp3" },
+        { title: "10. UNBREAKABLE - 2026 Delta Force Invitational", src: "Music/10. UNBREAKABLE - 2026 Delta Force Invitational.mp3" }
     ];
 
     const PLAY_ICON = '<svg viewBox="0 0 24 24"><path d="M7 4.5v15L20 12z"/></svg>';
